@@ -10,9 +10,10 @@ const MediaCard = ({ item, isTrending = false, onToggleBookmark }) => {
   const thumbnailSrc = isTrending
     ? item.thumbnail.trending
     : item.thumbnail.regular;
+
   const imageClasses = `
-    object-cover rounded-lg transition-transform duration-300 group-hover:scale-105
-    ${isTrending ? "w-80 h-56" : "w-full h-48"}
+    object-cover rounded-lg transition-transform duration-300 group-hover:scale-105 w-full
+    ${isTrending ? "h-48 sm:h-52 md:h-56" : "h-48"}
   `;
 
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import SearchBar from "../components/media/SearchBar";
 import MediaCard from "../components/media/MediaCard";
 
@@ -21,15 +20,14 @@ const HomePage = ({
       {/* Trending Section */}
       <section className="mb-8">
         <h2 className="text-xl font-light text-white mb-6">Trending</h2>
-        <div className="flex gap-6 overflow-x-auto pb-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
           {getFilteredContent(data.trending).map((item) => (
-            <div key={item.id} className="flex-shrink-0">
-              <MediaCard
-                item={item}
-                isTrending
-                onToggleBookmark={toggleBookmark}
-              />
-            </div>
+            <MediaCard
+              key={item.id}
+              item={item}
+              isTrending
+              onToggleBookmark={toggleBookmark}
+            />
           ))}
         </div>
       </section>

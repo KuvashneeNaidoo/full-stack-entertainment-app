@@ -1,4 +1,3 @@
-import React from "react";
 import { Bookmark } from "lucide-react";
 import SearchBar from "../components/media/SearchBar";
 import MediaCard from "../components/media/MediaCard";
