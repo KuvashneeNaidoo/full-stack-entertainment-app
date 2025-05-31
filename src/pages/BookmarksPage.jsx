@@ -1,7 +1,7 @@
 import React from "react";
 import { Bookmark } from "lucide-react";
-import SearchBar from "../media/SearchBar";
-import MediaCard from "../media/MediaCard";
+import SearchBar from "../components/media/SearchBar";
+import MediaCard from "../components/media/MediaCard";
 
 const BookmarksPage = ({
   searchQuery,

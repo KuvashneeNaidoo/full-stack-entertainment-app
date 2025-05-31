@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import AuthScreen from "./components/auth/AuthScreen";
 import Navigation from "./components/layout/Navigation";
-import HomePage from "./components/pages/HomePage";
-import MoviesPage from "./components/pages/MoviesPage";
-import TVSeriesPage from "./components/pages/TVSeriesPage";
-import BookmarksPage from "./components/pages/BookmarksPage";
+import HomePage from "./pages/HomePage";
+import MoviesPage from "./pages/MoviesPage";
+import TVSeriesPage from "./pages/TVSeriesPage";
+import BookmarksPage from "./pages/BookmarksPage";
 import { mockData } from "./data/mockData";
 
 const App = () => {
